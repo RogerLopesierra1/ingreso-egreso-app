@@ -3,12 +3,12 @@
   "rulesDirectory": [
     "codelyzer"
   ],
-  "rules": {
+  "rules": {        
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
       "severity": "warn"
-    },
+    },    
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -30,8 +30,9 @@
           "instance-method"
         ]
       }
-    ],
+    ],      
     "no-consecutive-blank-lines": false,
+    "eofline": false,
     "no-console": [
       true,
       "debug",
@@ -46,6 +47,7 @@
       "ignore-params"
     ],
     "no-non-null-assertion": true,
+    "indent": false,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-use-before-declare": true,
@@ -59,8 +61,8 @@
     "quotemark": [
       true,
       "single"
-    ],
-    "trailing-comma": false,
+    ],        
+    "trailing-comma": false,    
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
