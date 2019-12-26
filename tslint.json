@@ -53,7 +53,7 @@
     "no-use-before-declare": true,
     "no-var-requires": false,
     "object-literal-key-quotes": [
-      true,
+      false,
       "as-needed"
     ],
     "object-literal-sort-keys": false,
@@ -61,7 +61,7 @@
     "quotemark": [
       true,
       "single"
-    ],        
+    ],           
     "trailing-comma": false,    
     "no-output-on-prefix": true,
     "use-input-property-decorator": true,
