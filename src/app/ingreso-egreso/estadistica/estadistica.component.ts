@@ -4,6 +4,7 @@ import { AppState } from 'src/app/app.reducer';
 import { Subscription } from 'rxjs';
 import { IngresoEgreso } from '../ingreso-egreso.model';
 
+
 @Component({
   selector: 'app-estadistica',
   templateUrl: './estadistica.component.html',
@@ -17,7 +18,7 @@ export class EstadisticaComponent implements OnInit {
   cuantosIngresos: number;
   cuantosEgresos: number;
 
-  subscripcion: Subscription = new Subscription();  
+  subscripcion: Subscription = new Subscription();
 
   constructor( private store: Store<AppState> ) { }
 
@@ -48,7 +49,6 @@ export class EstadisticaComponent implements OnInit {
       }
 
     });
-
 
 
   }

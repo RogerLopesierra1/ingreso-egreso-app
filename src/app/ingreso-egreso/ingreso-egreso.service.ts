@@ -5,7 +5,7 @@ import { AuthService } from '../auth/auth.service';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.reducer';
 import { filter, map } from 'rxjs/operators';
-import { SetItemsAction } from './ingreso-egreso.actions';
+import { SetItemsAction, UnsetItemsAction } from './ingreso-egreso.actions';
 import { Subscription } from 'rxjs';
 import Swal from 'sweetalert2';
 
@@ -58,6 +58,7 @@ export class IngresoEgresoService {
   cancelarSubscriptions() {
     this.ingresoEgresoListenerSubscription.unsubscribe();
     this.ingresoEgresoItemsSubscription.unsubscribe();
+    this.store.dispatch( new UnsetItemsAction() );
   }
 
 

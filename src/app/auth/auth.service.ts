@@ -16,7 +16,7 @@ import { map } from 'rxjs/operators';
 
 import Swal from 'sweetalert2';
 import { User } from './user.model';
-import { SetUserAction } from './auth.actions';
+import { SetUserAction, UnsetUserAction } from './auth.actions';
 import { Subscription } from 'rxjs';
 
 @Injectable({
@@ -127,6 +127,8 @@ export class AuthService {
     .catch( error => {
       console.log('NO SALIO');
     });
+
+    this.store.dispatch( new UnsetUserAction() );
 
   }
 
